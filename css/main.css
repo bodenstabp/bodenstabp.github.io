@@ -1,0 +1,12 @@
+header {
+  z-index: 3;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/*# sourceMappingURL=main.css.map */
