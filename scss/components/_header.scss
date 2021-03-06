@@ -1,7 +1,19 @@
-.nav-list__fullscreen{
+.nav-list__fullscreen, .nav-list{
     display: none;
 }
 
 nav {
-    display: none;
+    background: $secondary;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+nav .logo {
+    color: $primary;
+    font-weight: 600;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+}
+

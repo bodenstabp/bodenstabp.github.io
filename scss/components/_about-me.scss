@@ -1,12 +1,12 @@
 .about-me {
     background-color: $secondary;
     text-align: center;
-    padding-bottom: 3em;
+    padding-bottom: 1em;
 }
 
 .about-me__title {
     @include title-style;
-    padding: 0.5em 0;
+
 }
 
 .social-nav {
@@ -25,41 +25,50 @@
 }
 
 .about-me__info{
-    width: 270px;
-    margin: 2.3em auto 4em;
+    width: 275px;
+    margin: 2.3em auto 2em;
+    padding-bottom: 2em;
     font-family: $montserrat;
+    letter-spacing: 1px;
+    line-height: 30px;
     position: relative;
 }
 
 .about-me__info::after{
     content: "";
     border-bottom: solid 1px $primary;
-    width: 250px;
+    width: 275px;
     position: absolute;
-    top: 134px; right: 0;
+    bottom: -10px; right: 0px;
 }
 
-.about-me__technologies,
-.about-me__dev-tools{
-    padding-top:1em;
+.about-me__technologies__title,
+.about-me__dev-tools__title{
+    padding: 1.5em 0 1em;
+    letter-spacing: 4px;
 }
 
 .about-me__technologies__list,
 .about-me__dev-tools__list {
     list-style: none;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1em;
-    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
     margin: auto;
 }
 
 .about-me__technologies__list-item,
 .about-me__dev-tools__list-item {
     @include button-style;
-    font-size: 1em;
-    padding: 0.7em 0;
+    border-width: 2px;
+    font-size: 0.9em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    width: 130px;
+    padding: 0.5em 0.5em; 
+    margin: 0 0.5em 1em
 }
 
 

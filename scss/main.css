@@ -134,14 +134,11 @@ nav {
 body {
   color: #fff;
   background-color: #040507;
+  font-family: "Orbitron", sans-serif;
 }
 
 svg {
   display: block;
-}
-
-body {
-  font-family: "Orbitron", sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */

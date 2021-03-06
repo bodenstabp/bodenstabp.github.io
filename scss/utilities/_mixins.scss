@@ -1,13 +1,14 @@
 @mixin button-style {
-background-color: $secondary;
-border: solid 3px $primary;
-border-radius: 8px;
-font-family: inherit;
+    background-color: $secondary;
+    border: solid 3px $primary;
+    border-radius: 8px;
+    font-family: inherit;
 }
 
 @mixin title-style {
     text-decoration: underline;
     font-size: 2em;
     letter-spacing: 3px;
+    padding: 0.5em 0;
 }
 

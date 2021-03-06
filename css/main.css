@@ -1,9 +1,20 @@
-.nav-list__fullscreen {
+.nav-list__fullscreen, .nav-list {
   display: none;
 }
 
 nav {
-  display: none;
+  background: #141F31;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav .logo {
+  color: #61AEE3;
+  font-weight: 600;
+  font-size: 0.8em;
+  letter-spacing: 2px;
 }
 
 .hero {
@@ -26,6 +37,7 @@ nav {
   width: 250px;
   font-family: "Montserrat", sans-serif;
   font-size: 1.3em;
+  font-weight: 600;
   color: #61AEE3;
   letter-spacing: 1.2px;
 }
@@ -35,10 +47,13 @@ nav {
   border: solid 3px #61AEE3;
   border-radius: 8px;
   font-family: inherit;
+  border-width: 5px;
+  border-radius: 8px 2px;
   margin: 2.4em 0 1em;
   padding: 15px 30px;
   font-size: 1.2em;
-  letter-spacing: 2.5px;
+  letter-spacing: 5px;
+  font-weight: 600;
 }
 
 .hero__button a {
@@ -53,7 +68,7 @@ nav {
 .about-me {
   background-color: #141F31;
   text-align: center;
-  padding-bottom: 3em;
+  padding-bottom: 1em;
 }
 
 .about-me__title {
@@ -79,34 +94,38 @@ nav {
 }
 
 .about-me__info {
-  width: 270px;
-  margin: 2.3em auto 4em;
+  width: 275px;
+  margin: 2.3em auto 2em;
+  padding-bottom: 2em;
   font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  line-height: 30px;
   position: relative;
 }
 
 .about-me__info::after {
   content: "";
-  border-bottom: solid 3px #61AEE3;
-  width: 250px;
+  border-bottom: solid 1px #61AEE3;
+  width: 275px;
   position: absolute;
-  top: 134px;
-  right: 10px;
+  bottom: -10px;
+  right: 0px;
 }
 
-.about-me__technologies,
-.about-me__dev-tools {
-  padding-top: 1em;
+.about-me__technologies__title,
+.about-me__dev-tools__title {
+  padding: 1.5em 0 1em;
+  letter-spacing: 4px;
 }
 
 .about-me__technologies__list,
 .about-me__dev-tools__list {
   list-style: none;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1em;
-  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
   margin: auto;
 }
 
@@ -116,13 +135,79 @@ nav {
   border: solid 3px #61AEE3;
   border-radius: 8px;
   font-family: inherit;
-  font-size: 0.8em;
-  padding: 0;
+  border-width: 2px;
+  font-size: 0.9em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  width: 130px;
+  padding: 0.5em 0.5em;
+  margin: 0 0.5em 1em;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio__title {
+  text-decoration: underline;
+  font-size: 2em;
+  letter-spacing: 3px;
+  padding: 0.5em 0;
+  margin-bottom: 1em;
+}
+
+.portfolio__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 275px;
+  margin-bottom: 2em;
+}
+
+.portfolio__card__title {
+  background-color: #141F31;
+  border-radius: 8px 8px 0 0;
+  width: 275px;
+  text-align: center;
+  font-size: 1em;
+  letter-spacing: 3px;
+  padding: 1em 0;
+}
+
+.portfolio__card__image__container {
+  background-color: #523351;
+  width: 275px;
+  height: 200px;
+}
+
+.portfolio__card__desc {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9em;
+  letter-spacing: 2px;
+  line-height: 20px;
+  padding: 1em;
+  height: 170px;
+  text-align: center;
+  background-color: #141F31;
+}
+
+.portfolio__card__links {
+  background: #61AEE3;
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  align-items: center;
+  padding: 0.75em 0;
+  justify-content: space-evenly;
+  width: 275px;
 }
 
 .portfolio svg {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
 }
 
 * {
@@ -134,16 +219,11 @@ nav {
 body {
   color: #fff;
   background-color: #040507;
+  font-family: "Orbitron", sans-serif;
 }
 
 svg {
   display: block;
 }
-
-body {
-  font-family: "Orbitron", sans-serif;
-}
-
-/*# sourceMappingURL=main.css.map */
 
 /*# sourceMappingURL=main.css.map */
