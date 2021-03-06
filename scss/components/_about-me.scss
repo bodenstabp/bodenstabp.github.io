@@ -1,0 +1,66 @@
+.about-me {
+    background-color: $secondary;
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+.about-me__title {
+    @include title-style;
+    padding: 0.5em 0;
+}
+
+.social-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.social-nav li{
+    list-style: none;
+    width: 45px;
+    height: 45px;
+    fill: $primary;
+    margin: 0 0.5em
+}
+
+.about-me__info{
+    width: 270px;
+    margin: 2.3em auto 4em;
+    font-family: $montserrat;
+    position: relative;
+}
+
+.about-me__info::after{
+    content: "";
+    border-bottom: solid 1px $primary;
+    width: 250px;
+    position: absolute;
+    top: 134px; right: 0;
+}
+
+.about-me__technologies,
+.about-me__dev-tools{
+    padding-top:1em;
+}
+
+.about-me__technologies__list,
+.about-me__dev-tools__list {
+    list-style: none;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    width: 200px;
+    margin: auto;
+}
+
+.about-me__technologies__list-item,
+.about-me__dev-tools__list-item {
+    @include button-style;
+    font-size: 1em;
+    padding: 0.7em 0;
+}
+
+
+

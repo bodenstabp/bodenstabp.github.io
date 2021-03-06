@@ -5,46 +5,223 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paul Bodenstab || Software Developer</title>
-<!-- Stylesheets -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<!-- Stylesheets and Typography Links -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Orbitron&display=swap" rel="stylesheet">
 </head>
-<body data-spy="scroll" data-target="#navbar">
-    <header class="sticky-top">
-        <nav id="navbar" class="navbar navbar-light bg-light px-3">
-            <ul class="nav nav-pills">
-                <li class="nav-item">
-                  <a class="nav-link " href="#about">Active</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#portfolio">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#resume">Disabled</a>
-                </li>
-              </ul>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">paul.Bodenstab</div>
+            <div class="hamburger">
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href=#home>Home</a></li>
+                    <li class="nav-list__item"><a href=#about-me>About Me</a></li>
+                    <li class="nav-list__item"><a href=#portfolio>Portfolio</a></li>
+                    <li class="nav-list__item"><a href=#contact>Contact Me</a></li>
+                    <li class="nav-list__item"><a href=#resume>Resume</a></li>
+                </ul>
+            </div>
+            <ul class="nav-list__fullscreen">
+                <li class="nav-list__item"><a href=#home>Home</a></li>
+                <li class="nav-list__item"><a href=#about-me>About Me</a></li>
+                <li class="nav-list__item"><a href=#portfolio>Portfolio</a></li>
+                <li class="nav-list__item"><a href=#contact>Contact Me</a></li>
+                <li class="nav-list__item"><a href=#contact>Resume</a></li>
+            </ul>
         </nav>
     </header>
-    <main>
-        <section id="about" style="height: 100vh;">
-            <p>algfuraghiul;ghfauligrf</p>
-        </section>
-        <section id="portfolio" style="height: 100vh;">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, architecto harum? Excepturi facere non rerum, obcaecati optio quia dicta voluptates adipisci, sit quo aperiam tempora iste, laborum consequuntur alias dolores pariatur fugit quas velit in placeat nobis nesciunt. Voluptatibus pariatur suscipit, illo aperiam totam excepturi?</p>
-        </section>
-        <section id="contact" style="height: 100vh;">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sit asperiores eius, hic doloremque animi ullam. Consequatur dignissimos corporis dolores quam odit suscipit saepe eligendi officia nisi hic adipisci, quisquam nostrum assumenda atque fugit deserunt sint, sit quod voluptatibus ullam culpa quidem dicta possimus. Aut qui molestiae, laudantium, nihil facere at ipsam voluptatibus repellendus soluta consequuntur cumque id accusamus, accusantium repudiandae odio libero voluptatem. Similique blanditiis reprehenderit vitae sunt iste dolor excepturi odit eius impedit fuga, libero sit quaerat aliquam!</p>
-        </section>
-    </main>
-    <footer>
+    <section class="hero" id="home">
+        <h1 class="hero__title">The Future of Web Design is Here</h1>
+        <p class="hero__subtitle">A Web Presentation by Paul Bodenstab</p>
+        <button class="hero__button"><a href="#portfolio">My Work</a></button>
+        <div class="arrow"><a href="#about-me">></a></div>
+    </section>
+    <section class="about-me" id="about-me">
+        <h2 class="about-me__title">About Me</h2>
+        <ul class="social-nav">
+            <li class="social-nav__item github">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                    <path d="M12,0.3c-6.6,0-12,5.4-12,12c0,5.3,3.4,9.8,8.2,11.4C8.8,23.8,9,23.4,9,23.1c0-0.3,0-1,0-2c-3.3,0.7-4-1.6-4-1.6
+                    c-0.5-1.4-1.3-1.8-1.3-1.8C2.5,17,3.7,17,3.7,17c1.2,0.1,1.8,1.2,1.8,1.2c1.1,1.8,2.8,1.3,3.5,1c0.1-0.8,0.4-1.3,0.8-1.6
+                    c-2.7-0.3-5.5-1.3-5.5-5.9c0-1.3,0.5-2.4,1.2-3.2C5.4,8.1,5,6.9,5.7,5.3c0,0,1-0.3,3.3,1.2c1-0.3,2-0.4,3-0.4c1,0,2,0.1,3,0.4
+                    c2.3-1.6,3.3-1.2,3.3-1.2c0.6,1.7,0.2,2.9,0.1,3.2c0.8,0.8,1.2,1.9,1.2,3.2c0,4.6-2.8,5.6-5.5,5.9c0.4,0.4,0.8,1.1,0.8,2.2
+                    c0,1.6,0,2.9,0,3.3c0,0.3,0.2,0.7,0.8,0.6c4.8-1.6,8.2-6.1,8.2-11.4C24,5.7,18.6,0.3,12,0.3"/>
+                </svg>
+            </li>
+            <li class="social-nav__item">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                    <path d="M12,0C5.4,0,0,5.4,0,12s5.4,12,12,12s12-5.4,12-12S18.6,0,12,0z M10,16H8v-6h2V16z M9,9.1C8.4,9.1,7.9,8.6,7.9,8
+                    c0-0.6,0.5-1.1,1.1-1.1s1.1,0.5,1.1,1.1C10.1,8.6,9.6,9.1,9,9.1z M17,16h-2v-2.9c0-1.9-2-1.7-2,0V16h-2v-6h2v1.1
+                    c0.9-1.6,4-1.7,4,1.5V16z"/>
+                </svg>
+            </li>
+            <li class="social-nav__item">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                    <path d="M12,0C5.4,0,0,5.4,0,12s5.4,12,12,12s12-5.4,12-12S18.6,0,12,0z M18.1,9.6c0.2,4-2.8,8.5-8.2,8.5c-1.6,0-3.1-0.5-4.4-1.3
+                    c1.5,0.2,3-0.2,4.3-1.2c-1.3,0-2.3-0.9-2.7-2c0.5,0.1,0.9,0.1,1.3,0C7,13.4,6,12.1,6.1,10.8c0.4,0.2,0.8,0.3,1.3,0.4
+                    c-1.3-0.9-1.6-2.5-0.9-3.8c1.4,1.7,3.5,2.9,5.9,3c-0.4-1.8,0.9-3.5,2.8-3.5c0.8,0,1.6,0.3,2.1,0.9c0.7-0.1,1.3-0.4,1.8-0.7
+                    c-0.2,0.7-0.7,1.2-1.3,1.6c0.6-0.1,1.1-0.2,1.6-0.5C19.1,8.7,18.6,9.2,18.1,9.6z"/>
+                </svg>
+            </li>
+        </ul>
+        
+        <p class="about-me__info">
+            I am a developer utilizing modern technologies to create advanced applications and solve real world problems. Simplicity and beauty are what I strive for.
+        </p>
+        <div class="about-me__technologies">
+            <h3 class="about-me__technologies__title">Technologies I Use</h3>
+            <ul class="about-me__technologies__list">
+                <li class="about-me__technologies__list-item">HTML</li>
+                <li class="about-me__technologies__list-item">CSS</li>
+                <li class="about-me__technologies__list-item">SASS</li>
+                <li class="about-me__technologies__list-item">Javascript</li>
+            </ul>
+        </div>
+        <div class="about-me__dev-tools">
+            <h3 class="about-me__dev-tools__title">Dev Tools I Use</h3>
+            <ul class="about-me__dev-tools__list">
+                <li class="about-me__dev-tools__list-item">Photoshop</li>
+                <li class="about-me__dev-tools__list-item">InDesign</li>
+                <li class="about-me__dev-tools__list-item">Illustrator</li>
+            </ul>
+        </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+        <h2 class="portfolio__title">The Portfolio</h2>
+        <div class="portfolio__card">
+            <div class="portfolio__card__image">
 
+            </div>
+            <div class="portfolio__card__desc">
+
+            </div>
+            <div class="portfolio__card__links">
+                <div class="project-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 18v-4h-7v-4h7v-4l6 6-6 6z"/></svg>
+                </div>
+                <div class="project-github">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                        <path d="M12,0.3c-6.6,0-12,5.4-12,12c0,5.3,3.4,9.8,8.2,11.4C8.8,23.8,9,23.4,9,23.1c0-0.3,0-1,0-2c-3.3,0.7-4-1.6-4-1.6
+                            c-0.5-1.4-1.3-1.8-1.3-1.8C2.5,17,3.7,17,3.7,17c1.2,0.1,1.8,1.2,1.8,1.2c1.1,1.8,2.8,1.3,3.5,1c0.1-0.8,0.4-1.3,0.8-1.6
+                            c-2.7-0.3-5.5-1.3-5.5-5.9c0-1.3,0.5-2.4,1.2-3.2C5.4,8.1,5,6.9,5.7,5.3c0,0,1-0.3,3.3,1.2c1-0.3,2-0.4,3-0.4c1,0,2,0.1,3,0.4
+                            c2.3-1.6,3.3-1.2,3.3-1.2c0.6,1.7,0.2,2.9,0.1,3.2c0.8,0.8,1.2,1.9,1.2,3.2c0,4.6-2.8,5.6-5.5,5.9c0.4,0.4,0.8,1.1,0.8,2.2
+                            c0,1.6,0,2.9,0,3.3c0,0.3,0.2,0.7,0.8,0.6c4.8-1.6,8.2-6.1,8.2-11.4C24,5.7,18.6,0.3,12,0.3"/>
+                    </svg>
+                </div>
+            <div class="portfolio__card__image">
+
+            </div>
+            <div class="portfolio__card__desc">
+
+            </div>
+            <div class="portfolio__card__links">
+                <div class="project-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 18v-4h-7v-4h7v-4l6 6-6 6z"/></svg>
+                </div>
+                <div class="project-github">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                        <path d="M12,0.3c-6.6,0-12,5.4-12,12c0,5.3,3.4,9.8,8.2,11.4C8.8,23.8,9,23.4,9,23.1c0-0.3,0-1,0-2c-3.3,0.7-4-1.6-4-1.6
+                            c-0.5-1.4-1.3-1.8-1.3-1.8C2.5,17,3.7,17,3.7,17c1.2,0.1,1.8,1.2,1.8,1.2c1.1,1.8,2.8,1.3,3.5,1c0.1-0.8,0.4-1.3,0.8-1.6
+                            c-2.7-0.3-5.5-1.3-5.5-5.9c0-1.3,0.5-2.4,1.2-3.2C5.4,8.1,5,6.9,5.7,5.3c0,0,1-0.3,3.3,1.2c1-0.3,2-0.4,3-0.4c1,0,2,0.1,3,0.4
+                            c2.3-1.6,3.3-1.2,3.3-1.2c0.6,1.7,0.2,2.9,0.1,3.2c0.8,0.8,1.2,1.9,1.2,3.2c0,4.6-2.8,5.6-5.5,5.9c0.4,0.4,0.8,1.1,0.8,2.2
+                            c0,1.6,0,2.9,0,3.3c0,0.3,0.2,0.7,0.8,0.6c4.8-1.6,8.2-6.1,8.2-11.4C24,5.7,18.6,0.3,12,0.3"/>
+                    </svg>
+                </div>
+            <div class="portfolio__card__image">
+
+            </div>
+            <div class="portfolio__card__desc">
+
+            </div>
+            <div class="portfolio__card__links">
+                <div class="project-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 18v-4h-7v-4h7v-4l6 6-6 6z"/></svg>
+                </div>
+                <div class="project-github">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                        <path d="M12,0.3c-6.6,0-12,5.4-12,12c0,5.3,3.4,9.8,8.2,11.4C8.8,23.8,9,23.4,9,23.1c0-0.3,0-1,0-2c-3.3,0.7-4-1.6-4-1.6
+                            c-0.5-1.4-1.3-1.8-1.3-1.8C2.5,17,3.7,17,3.7,17c1.2,0.1,1.8,1.2,1.8,1.2c1.1,1.8,2.8,1.3,3.5,1c0.1-0.8,0.4-1.3,0.8-1.6
+                            c-2.7-0.3-5.5-1.3-5.5-5.9c0-1.3,0.5-2.4,1.2-3.2C5.4,8.1,5,6.9,5.7,5.3c0,0,1-0.3,3.3,1.2c1-0.3,2-0.4,3-0.4c1,0,2,0.1,3,0.4
+                            c2.3-1.6,3.3-1.2,3.3-1.2c0.6,1.7,0.2,2.9,0.1,3.2c0.8,0.8,1.2,1.9,1.2,3.2c0,4.6-2.8,5.6-5.5,5.9c0.4,0.4,0.8,1.1,0.8,2.2
+                            c0,1.6,0,2.9,0,3.3c0,0.3,0.2,0.7,0.8,0.6c4.8-1.6,8.2-6.1,8.2-11.4C24,5.7,18.6,0.3,12,0.3"/>
+                    </svg>
+                </div>
+            <div class="portfolio__card__image">
+
+            </div>
+            <div class="portfolio__card__desc">
+
+            </div>
+            <div class="portfolio__card__links">
+                <div class="project-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 18v-4h-7v-4h7v-4l6 6-6 6z"/></svg>
+                </div>
+                <div class="project-github">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                        <path d="M12,0.3c-6.6,0-12,5.4-12,12c0,5.3,3.4,9.8,8.2,11.4C8.8,23.8,9,23.4,9,23.1c0-0.3,0-1,0-2c-3.3,0.7-4-1.6-4-1.6
+                            c-0.5-1.4-1.3-1.8-1.3-1.8C2.5,17,3.7,17,3.7,17c1.2,0.1,1.8,1.2,1.8,1.2c1.1,1.8,2.8,1.3,3.5,1c0.1-0.8,0.4-1.3,0.8-1.6
+                            c-2.7-0.3-5.5-1.3-5.5-5.9c0-1.3,0.5-2.4,1.2-3.2C5.4,8.1,5,6.9,5.7,5.3c0,0,1-0.3,3.3,1.2c1-0.3,2-0.4,3-0.4c1,0,2,0.1,3,0.4
+                            c2.3-1.6,3.3-1.2,3.3-1.2c0.6,1.7,0.2,2.9,0.1,3.2c0.8,0.8,1.2,1.9,1.2,3.2c0,4.6-2.8,5.6-5.5,5.9c0.4,0.4,0.8,1.1,0.8,2.2
+                            c0,1.6,0,2.9,0,3.3c0,0.3,0.2,0.7,0.8,0.6c4.8-1.6,8.2-6.1,8.2-11.4C24,5.7,18.6,0.3,12,0.3"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <h2 class="contact__title">Contact Me</h2>
+        <form action="mailto:bodenstabp@gmail.com" method="POST" class="contact__form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Required">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="Required">
+            <label for="subject">How I Can Help You</label>
+            <textarea name="subject" id="subject"></textarea>
+            <button class="contact__submit" type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <ul class="footer">
+            <li class="footer__item github">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                    <path d="M12,0.3c-6.6,0-12,5.4-12,12c0,5.3,3.4,9.8,8.2,11.4C8.8,23.8,9,23.4,9,23.1c0-0.3,0-1,0-2c-3.3,0.7-4-1.6-4-1.6
+                    c-0.5-1.4-1.3-1.8-1.3-1.8C2.5,17,3.7,17,3.7,17c1.2,0.1,1.8,1.2,1.8,1.2c1.1,1.8,2.8,1.3,3.5,1c0.1-0.8,0.4-1.3,0.8-1.6
+                    c-2.7-0.3-5.5-1.3-5.5-5.9c0-1.3,0.5-2.4,1.2-3.2C5.4,8.1,5,6.9,5.7,5.3c0,0,1-0.3,3.3,1.2c1-0.3,2-0.4,3-0.4c1,0,2,0.1,3,0.4
+                    c2.3-1.6,3.3-1.2,3.3-1.2c0.6,1.7,0.2,2.9,0.1,3.2c0.8,0.8,1.2,1.9,1.2,3.2c0,4.6-2.8,5.6-5.5,5.9c0.4,0.4,0.8,1.1,0.8,2.2
+                    c0,1.6,0,2.9,0,3.3c0,0.3,0.2,0.7,0.8,0.6c4.8-1.6,8.2-6.1,8.2-11.4C24,5.7,18.6,0.3,12,0.3"/>
+                </svg>
+            </li>
+            <li class="footer__item">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                    <path d="M12,0C5.4,0,0,5.4,0,12s5.4,12,12,12s12-5.4,12-12S18.6,0,12,0z M10,16H8v-6h2V16z M9,9.1C8.4,9.1,7.9,8.6,7.9,8
+                    c0-0.6,0.5-1.1,1.1-1.1s1.1,0.5,1.1,1.1C10.1,8.6,9.6,9.1,9,9.1z M17,16h-2v-2.9c0-1.9-2-1.7-2,0V16h-2v-6h2v1.1
+                    c0.9-1.6,4-1.7,4,1.5V16z"/>
+                </svg>
+            </li>
+            <li class="footer__item">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                    <path d="M12,0C5.4,0,0,5.4,0,12s5.4,12,12,12s12-5.4,12-12S18.6,0,12,0z M18.1,9.6c0.2,4-2.8,8.5-8.2,8.5c-1.6,0-3.1-0.5-4.4-1.3
+                    c1.5,0.2,3-0.2,4.3-1.2c-1.3,0-2.3-0.9-2.7-2c0.5,0.1,0.9,0.1,1.3,0C7,13.4,6,12.1,6.1,10.8c0.4,0.2,0.8,0.3,1.3,0.4
+                    c-1.3-0.9-1.6-2.5-0.9-3.8c1.4,1.7,3.5,2.9,5.9,3c-0.4-1.8,0.9-3.5,2.8-3.5c0.8,0,1.6,0.3,2.1,0.9c0.7-0.1,1.3-0.4,1.8-0.7
+                    c-0.2,0.7-0.7,1.2-1.3,1.6c0.6-0.1,1.1-0.2,1.6-0.5C19.1,8.7,18.6,9.2,18.1,9.6z"/>
+                </svg>
+            </li>
+        </ul>
+        <div class="logo">paul.Bodenstab</div>
     </footer>
 <!-- JS Links -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <script src="js/app.js"></script>
-
+<script src="app.js"></script>
 </body>
 </html>
