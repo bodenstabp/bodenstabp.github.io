@@ -20,8 +20,11 @@
     list-style: none;
     width: 45px;
     height: 45px;
-    fill: $primary;
     margin: 0 0.5em
+}
+
+.social-nav a {
+    fill: $primary;
 }
 
 .about-me__info{

@@ -5,16 +5,10 @@
 nav {
   background: #141F31;
   height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 nav .logo {
   color: #61AEE3;
-  font-weight: 600;
-  font-size: 0.8em;
-  letter-spacing: 2px;
 }
 
 .hero {
@@ -54,11 +48,16 @@ nav .logo {
   font-size: 1.2em;
   letter-spacing: 5px;
   font-weight: 600;
+  transition: background-color 0.5s;
+  color: #fff;
+}
+.hero__button:hover {
+  background-color: #1b2a43;
+  cursor: pointer;
 }
 
 .hero__button a {
   text-decoration: none;
-  color: #fff;
 }
 
 .arrow {
@@ -89,8 +88,11 @@ nav .logo {
   list-style: none;
   width: 45px;
   height: 45px;
-  fill: #61AEE3;
   margin: 0 0.5em;
+}
+
+.social-nav a {
+  fill: #61AEE3;
 }
 
 .about-me__info {
@@ -208,6 +210,130 @@ nav .logo {
 .portfolio svg {
   width: 60px;
   height: 60px;
+}
+
+.contact {
+  background: #141F31;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 8em;
+}
+
+.contact__title {
+  text-decoration: underline;
+  font-size: 2em;
+  letter-spacing: 3px;
+  padding: 0.5em 0;
+  margin-bottom: 0.5em;
+}
+
+.form__container {
+  background: #61AEE3;
+  padding: 0 1em 1em;
+  width: 275px;
+  border-radius: 8px 2px;
+  position: relative;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__item {
+  display: block;
+}
+
+.contact__input__title {
+  padding: 0.75em 0 0.25em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.contact__input,
+.contact__textarea {
+  width: 240px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+  padding: 0.5em;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  color: #141F31;
+}
+
+.contact__input {
+  height: 50px;
+  margin-bottom: 1em;
+}
+
+.contact__textarea {
+  height: 100px;
+  margin-bottom: 0.75em;
+  resize: none;
+}
+
+.contact__submit {
+  background-color: #141F31;
+  border: solid 3px #61AEE3;
+  border-radius: 8px;
+  font-family: inherit;
+  color: #fff;
+  position: absolute;
+  bottom: -110px;
+  border-width: 5px;
+  border-radius: 2px 8px;
+  margin: 2.4em 0 1em;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  letter-spacing: 5px;
+  font-weight: 600;
+  transition: background-color 0.5s;
+}
+.contact__submit:hover {
+  background-color: #1b2a43;
+  cursor: pointer;
+}
+
+.footer__nav {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__nav__item {
+  width: 50px;
+  height: 50px;
+  padding: 0.5em;
+}
+
+.footer__nav__item a {
+  fill: #523351;
+  width: 50px;
+  height: 50px;
+}
+
+.footer__logo {
+  color: #61AEE3;
+  font-weight: 600;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0.25em;
+  padding: 0.25em;
+}
+
+.footer__logo a {
+  color: #61AEE3;
+  text-decoration: none;
 }
 
 * {

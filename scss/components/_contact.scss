@@ -1,0 +1,87 @@
+.contact{
+    background: $secondary;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8em;
+}
+
+.contact__title {
+    @include title-style;
+    margin-bottom: 0.5em;
+}
+
+.form__container {
+    background: $primary;
+    padding: 0 1em 1em;
+    width:275px;
+    border-radius: 8px 2px;
+    position: relative;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.contact__item{
+    display: block;
+}
+
+.contact__input__title {
+    padding: 0.75em 0 0.25em;
+    font-family: $montserrat;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+.contact__input,
+.contact__textarea {
+    width: 240px;
+    font-family: $montserrat;
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+    padding: 0.5em;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    color: $secondary;
+}
+
+.contact__input {
+    height: 50px;
+    margin-bottom: 1em;
+}
+
+.contact__textarea {
+    height: 100px;
+    margin-bottom: 0.75em;
+    resize: none;
+}
+
+.contact__submit {
+    @include button-style;
+    color: $light;
+    position: absolute;
+    bottom: -110px;
+    border-width: 5px;
+    border-radius: 2px 8px;
+    margin: 2.4em 0 1em;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    letter-spacing: 5px;
+    font-weight: 600;
+    transition: background-color 0.5s ;
+
+    &:hover{
+        background-color: lighten($secondary, 5%);
+        cursor: pointer;
+    }
+}
