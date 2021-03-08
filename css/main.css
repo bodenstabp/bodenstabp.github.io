@@ -1,14 +1,110 @@
-.nav-list__fullscreen, .nav-list {
-  display: none;
-}
-
 nav {
   background: #141F31;
-  height: 10vh;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: -5px;
 }
 
 nav .logo {
   color: #61AEE3;
+  font-weight: 600;
+  font-size: 0.8em;
+  letter-spacing: 4px;
+  padding-left: 50px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.nav__toggle {
+  z-index: 11;
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  background: none;
+  padding: 1em 0.5em;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.hamburger {
+  display: block;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  width: 2em;
+  height: 3px;
+  background: #fff;
+  transition: transform 0.25s;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  right: 4px;
+}
+
+.hamburger::before {
+  bottom: 7px;
+}
+
+.hamburger::after {
+  top: 7px;
+}
+
+.nav__open .nav .nav-list {
+  transform: translateX(0);
+}
+
+.nav__open .nav__toggle {
+  position: fixed;
+}
+
+.nav__open .hamburger {
+  transform: rotate(45deg);
+  bottom: 0;
+}
+
+.nav__open .hamburger::before {
+  transform: translateX(100vw);
+}
+
+.nav__open .hamburger::after {
+  transform: rotate(-90deg) translateX(6px);
+  right: 0;
+}
+
+.nav-list {
+  z-index: 10;
+  background: #141F31;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  transform: translateX(100%);
+  transition: transform 0.55s ease-in-out;
+}
+
+.nav-list a {
+  font-size: 1.4em;
+  letter-spacing: 4px;
+  color: #fff;
+}
+.nav-list a:hover {
+  text-decoration: underline;
 }
 
 .hero {
@@ -31,9 +127,13 @@ nav .logo {
   width: 250px;
   font-family: "Montserrat", sans-serif;
   font-size: 1.3em;
-  font-weight: 600;
+  margin: auto;
   color: #61AEE3;
   letter-spacing: 1.2px;
+}
+
+.hero__image {
+  display: none;
 }
 
 .hero__button {
@@ -93,6 +193,10 @@ nav .logo {
 
 .social-nav a {
   fill: #61AEE3;
+  transition: fill 0.5s;
+}
+.social-nav a:hover {
+  fill: #623d61;
 }
 
 .about-me__info {
@@ -146,7 +250,7 @@ nav .logo {
   margin: 0 0.5em 1em;
 }
 
-.portfolio {
+.portfolio__card__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -159,6 +263,7 @@ nav .logo {
   letter-spacing: 3px;
   padding: 0.5em 0;
   margin-bottom: 1em;
+  text-align: center;
 }
 
 .portfolio__card {
@@ -210,6 +315,10 @@ nav .logo {
 .portfolio svg {
   width: 60px;
   height: 60px;
+  transition: fill 0.5s;
+}
+.portfolio svg:hover {
+  fill: #523351;
 }
 
 .contact {
@@ -230,9 +339,10 @@ nav .logo {
 }
 
 .form__container {
-  background: #61AEE3;
+  background: #141F31;
   padding: 0 1em 1em;
   width: 275px;
+  border: solid 4px #523351;
   border-radius: 8px 2px;
   position: relative;
 }
@@ -250,7 +360,6 @@ nav .logo {
 
 .contact__input__title {
   padding: 0.75em 0 0.25em;
-  font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
   letter-spacing: 1px;
   text-align: center;
@@ -285,6 +394,8 @@ nav .logo {
   border: solid 3px #61AEE3;
   border-radius: 8px;
   font-family: inherit;
+  border-color: #523351;
+  background-color: #523351;
   color: #fff;
   position: absolute;
   bottom: -110px;
@@ -298,8 +409,12 @@ nav .logo {
   transition: background-color 0.5s;
 }
 .contact__submit:hover {
-  background-color: #1b2a43;
+  background-color: #623d61;
   cursor: pointer;
+}
+
+footer {
+  padding: 1em;
 }
 
 .footer__nav {
@@ -319,6 +434,10 @@ nav .logo {
   fill: #523351;
   width: 50px;
   height: 50px;
+  transition: fill 0.5s;
+}
+.footer__nav__item a:hover {
+  fill: #623d61;
 }
 
 .footer__logo {
@@ -336,10 +455,161 @@ nav .logo {
   text-decoration: none;
 }
 
+@media (min-width: 768px) {
+  .hero {
+    position: relative;
+    text-align: left;
+    align-items: flex-start;
+    margin-left: 50px;
+    overflow: hidden;
+    height: 375px;
+  }
+
+  .hero__title {
+    width: 500px;
+    font-size: 2em;
+    letter-spacing: 5px;
+  }
+
+  .hero__subtitle {
+    margin: initial;
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+
+  .hero__image {
+    display: initial;
+    width: 438px;
+    transform: rotate(-90deg);
+    position: absolute;
+    right: -125px;
+    top: 206px;
+  }
+
+  .about-me {
+    padding: 1.5em 50px;
+    display: grid;
+    grid-template-areas: "social-nav about-me__title" "about-me__info about-me__technologies" "about-me__info about-me__dev-tools";
+  }
+
+  .about-me__title {
+    grid-area: about-me__title;
+    letter-spacing: 8px;
+    font-size: 2.4em;
+  }
+
+  .social-nav {
+    grid-area: social-nav;
+    justify-self: start;
+  }
+
+  .about-me__title,
+.about-me__technologies,
+.about-me__dev-tools {
+    justify-self: end;
+  }
+
+  .about-me__info {
+    margin: 0;
+    padding-top: 1em;
+    grid-area: about-me__info;
+    align-self: center;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    text-align: left;
+    width: 300px;
+  }
+
+  .about-me__technologies {
+    grid-area: about-me__technologies;
+  }
+
+  .about-me__dev-tools {
+    grid-area: about-me__dev-tools;
+  }
+
+  .about-me__info::after {
+    display: none;
+  }
+
+  .portfolio {
+    padding: 1.5em 0;
+  }
+
+  .portfolio__title {
+    display: block;
+    text-align: left;
+    font-size: 2.4em;
+    letter-spacing: 8px;
+    margin-left: 50px;
+  }
+
+  .portfolio__card__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .portfolio__card {
+    margin: 25px 25px;
+  }
+
+  .contact {
+    padding: 1.5em 0 8em;
+  }
+
+  .contact__title {
+    font-size: 2.4em;
+    letter-spacing: 8px;
+  }
+
+  .form__container {
+    width: 600px;
+  }
+
+  .contact__input,
+.contact__textarea {
+    width: 400px;
+    font-size: 1.3em;
+  }
+
+  .contact__textarea {
+    height: 200px;
+  }
+}
+@media (min-width: 1024px) {
+  nav .logo {
+    font-size: 1em;
+  }
+
+  .nav__toggle,
+.hamburger {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    width: initial;
+    height: initial;
+    position: initial;
+    transform: initial;
+    padding-right: 50px;
+  }
+
+  .nav-list a {
+    font-size: 0.8em;
+    margin-left: 1.5em;
+  }
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -348,8 +618,11 @@ body {
   font-family: "Orbitron", sans-serif;
 }
 
-svg {
-  display: block;
+.css-transitions-only-after-page-load * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
 }
 
 /*# sourceMappingURL=main.css.map */

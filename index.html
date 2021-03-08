@@ -14,28 +14,33 @@
     <header>
         <nav class="nav">
             <div class="logo">paul.Bodenstab</div>
-            <div class="hamburger">
-                <ul class="nav-list">
-                    <li class="nav-list__item"><a href=#home>Home</a></li>
-                    <li class="nav-list__item"><a href=#about-me>About Me</a></li>
-                    <li class="nav-list__item"><a href=#portfolio>Portfolio</a></li>
-                    <li class="nav-list__item"><a href=#contact>Contact Me</a></li>
-                    <li class="nav-list__item"><a href=#resume>Resume</a></li>
-                </ul>
-            </div>
-            <ul class="nav-list__fullscreen">
+            <button class="nav__toggle">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-list__hamburger nav-list">
+                <li class="nav-list__item"><a href=#home>Home</a></li>
+                <li class="nav-list__item"><a href=#about-me>About Me</a></li>
+                <li class="nav-list__item"><a href=#portfolio>Portfolio</a></li>
+                <li class="nav-list__item"><a href=#contact>Contact Me</a></li>
+                <li class="nav-list__item"><a href=#resume>Resume</a></li>
+            </ul>
+            <!-- <ul class="nav-list__fullscreen nav-list">
                 <li class="nav-list__item"><a href=#home>Home</a></li>
                 <li class="nav-list__item"><a href=#about-me>About Me</a></li>
                 <li class="nav-list__item"><a href=#portfolio>Portfolio</a></li>
                 <li class="nav-list__item"><a href=#contact>Contact Me</a></li>
                 <li class="nav-list__item"><a href=#contact>Resume</a></li>
-            </ul>
+            </ul> -->
         </nav>
     </header>
+    <img class="hero__image" src="images/hero-image.jpeg" alt="Technology">
     <section class="hero" id="home">
-        <h1 class="hero__title">The Future of Web Design is Here</h1>
-        <p class="hero__subtitle">A Web Presentation by Paul Bodenstab</p>
-        <a href="#portfolio"><button class="hero__button">My Work</button></a>
+        <div class="container">
+            <h1 class="hero__title">The Future of Web Design is Here</h1>
+            <p class="hero__subtitle">A Web Presentation by Paul Bodenstab</p>
+            <a href="#portfolio"><button class="hero__button">My Work</button></a>
+        </div>
+        
         <div class="arrow"><a href="#about-me">></a></div>
     </section>
     <section class="about-me" id="about-me">
@@ -93,164 +98,165 @@
     </section>
     <section class="portfolio" id="portfolio">
         <h2 class="portfolio__title">The Portfolio</h2>
-        <div class="portfolio__card">
-            <div class="portfolio__card__title"><h3>Employee Directory</h3></div>
-            <div class="portfolio__card__image__container">
-                <!-- <img class="portfolio__card__image" src="#" alt="#"> -->
-            </div>
-            <div class="portfolio__card__desc">
-                <p>
-                    A random generated employee directory utilizes an API to fetch and display data.
-                    It has full search functionality and supports a pop-up modal.
-                </p>
-            </div>
-            <div class="portfolio__card__links">
-                <div class="project-arrow">
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 18v-4h-7v-4h7v-4l6 6-6 6z"/></svg>
-                    </a>
+        <div class="portfolio__card__container">
+            <div class="portfolio__card">
+                <div class="portfolio__card__title"><h3>Employee Directory</h3></div>
+                <div class="portfolio__card__image__container">
+                    <!-- <img class="portfolio__card__image" src="#" alt="#"> -->
                 </div>
-                <div class="project-github">
-                    <a href ="#">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-                            <path d="M12,0.3c-6.6,0-12,5.4-12,12c0,5.3,3.4,9.8,8.2,11.4C8.8,23.8,9,23.4,9,23.1c0-0.3,0-1,0-2c-3.3,0.7-4-1.6-4-1.6
-                                c-0.5-1.4-1.3-1.8-1.3-1.8C2.5,17,3.7,17,3.7,17c1.2,0.1,1.8,1.2,1.8,1.2c1.1,1.8,2.8,1.3,3.5,1c0.1-0.8,0.4-1.3,0.8-1.6
-                                c-2.7-0.3-5.5-1.3-5.5-5.9c0-1.3,0.5-2.4,1.2-3.2C5.4,8.1,5,6.9,5.7,5.3c0,0,1-0.3,3.3,1.2c1-0.3,2-0.4,3-0.4c1,0,2,0.1,3,0.4
-                                c2.3-1.6,3.3-1.2,3.3-1.2c0.6,1.7,0.2,2.9,0.1,3.2c0.8,0.8,1.2,1.9,1.2,3.2c0,4.6-2.8,5.6-5.5,5.9c0.4,0.4,0.8,1.1,0.8,2.2
-                                c0,1.6,0,2.9,0,3.3c0,0.3,0.2,0.7,0.8,0.6c4.8-1.6,8.2-6.1,8.2-11.4C24,5.7,18.6,0.3,12,0.3"/>
-                        </svg>
-                    </a>
+                <div class="portfolio__card__desc">
+                    <p>
+                        A random generated employee directory utilizes an API to fetch and display data.
+                        It has full search functionality and supports a pop-up modal.
+                    </p>
+                </div>
+                <div class="portfolio__card__links">
+                    <div class="project-arrow">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 18v-4h-7v-4h7v-4l6 6-6 6z"/></svg>
+                        </a>
+                    </div>
+                    <div class="project-github">
+                        <a href ="#">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                                <path d="M12,0.3c-6.6,0-12,5.4-12,12c0,5.3,3.4,9.8,8.2,11.4C8.8,23.8,9,23.4,9,23.1c0-0.3,0-1,0-2c-3.3,0.7-4-1.6-4-1.6
+                                    c-0.5-1.4-1.3-1.8-1.3-1.8C2.5,17,3.7,17,3.7,17c1.2,0.1,1.8,1.2,1.8,1.2c1.1,1.8,2.8,1.3,3.5,1c0.1-0.8,0.4-1.3,0.8-1.6
+                                    c-2.7-0.3-5.5-1.3-5.5-5.9c0-1.3,0.5-2.4,1.2-3.2C5.4,8.1,5,6.9,5.7,5.3c0,0,1-0.3,3.3,1.2c1-0.3,2-0.4,3-0.4c1,0,2,0.1,3,0.4
+                                    c2.3-1.6,3.3-1.2,3.3-1.2c0.6,1.7,0.2,2.9,0.1,3.2c0.8,0.8,1.2,1.9,1.2,3.2c0,4.6-2.8,5.6-5.5,5.9c0.4,0.4,0.8,1.1,0.8,2.2
+                                    c0,1.6,0,2.9,0,3.3c0,0.3,0.2,0.7,0.8,0.6c4.8-1.6,8.2-6.1,8.2-11.4C24,5.7,18.6,0.3,12,0.3"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__card">
+                <div class="portfolio__card__title"><h3>YourApp</h3></div>
+                <div class="portfolio__card__image__container">
+                    <!-- <img class="portfolio__card__image" src="#" alt="#"> -->
+                </div>
+                <div class="portfolio__card__desc">
+                    <p>
+                        This page provides a faux social media page. It displays a knowledge of JS frameworks and an ability to take a given UI/UX mock-up and turn it into a functioning webpage.
+                    </p>
+                </div>
+                <div class="portfolio__card__links">
+                    <div class="project-arrow">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 18v-4h-7v-4h7v-4l6 6-6 6z"/></svg>
+                        </a>
+                    </div>
+                    <div class="project-github">
+                        <a href ="#">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                                <path d="M12,0.3c-6.6,0-12,5.4-12,12c0,5.3,3.4,9.8,8.2,11.4C8.8,23.8,9,23.4,9,23.1c0-0.3,0-1,0-2c-3.3,0.7-4-1.6-4-1.6
+                                    c-0.5-1.4-1.3-1.8-1.3-1.8C2.5,17,3.7,17,3.7,17c1.2,0.1,1.8,1.2,1.8,1.2c1.1,1.8,2.8,1.3,3.5,1c0.1-0.8,0.4-1.3,0.8-1.6
+                                    c-2.7-0.3-5.5-1.3-5.5-5.9c0-1.3,0.5-2.4,1.2-3.2C5.4,8.1,5,6.9,5.7,5.3c0,0,1-0.3,3.3,1.2c1-0.3,2-0.4,3-0.4c1,0,2,0.1,3,0.4
+                                    c2.3-1.6,3.3-1.2,3.3-1.2c0.6,1.7,0.2,2.9,0.1,3.2c0.8,0.8,1.2,1.9,1.2,3.2c0,4.6-2.8,5.6-5.5,5.9c0.4,0.4,0.8,1.1,0.8,2.2
+                                    c0,1.6,0,2.9,0,3.3c0,0.3,0.2,0.7,0.8,0.6c4.8-1.6,8.2-6.1,8.2-11.4C24,5.7,18.6,0.3,12,0.3"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__card">
+                <div class="portfolio__card__title"><h3>Wheel of Success</h3></div>
+                <div class="portfolio__card__image__container">
+                    <!-- <img class="portfolio__card__image" src="#" alt="#"> -->
+                </div>
+                <div class="portfolio__card__desc">
+                    <p>
+                        A phrase guessing game utilizing javascript and clean css to display interactivity in an application.
+                    </p>
+                </div>
+                <div class="portfolio__card__links">
+                    <div class="project-arrow">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 18v-4h-7v-4h7v-4l6 6-6 6z"/></svg>
+                        </a>
+                    </div>
+                    <div class="project-github">
+                        <a href ="#">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                                <path d="M12,0.3c-6.6,0-12,5.4-12,12c0,5.3,3.4,9.8,8.2,11.4C8.8,23.8,9,23.4,9,23.1c0-0.3,0-1,0-2c-3.3,0.7-4-1.6-4-1.6
+                                    c-0.5-1.4-1.3-1.8-1.3-1.8C2.5,17,3.7,17,3.7,17c1.2,0.1,1.8,1.2,1.8,1.2c1.1,1.8,2.8,1.3,3.5,1c0.1-0.8,0.4-1.3,0.8-1.6
+                                    c-2.7-0.3-5.5-1.3-5.5-5.9c0-1.3,0.5-2.4,1.2-3.2C5.4,8.1,5,6.9,5.7,5.3c0,0,1-0.3,3.3,1.2c1-0.3,2-0.4,3-0.4c1,0,2,0.1,3,0.4
+                                    c2.3-1.6,3.3-1.2,3.3-1.2c0.6,1.7,0.2,2.9,0.1,3.2c0.8,0.8,1.2,1.9,1.2,3.2c0,4.6-2.8,5.6-5.5,5.9c0.4,0.4,0.8,1.1,0.8,2.2
+                                    c0,1.6,0,2.9,0,3.3c0,0.3,0.2,0.7,0.8,0.6c4.8-1.6,8.2-6.1,8.2-11.4C24,5.7,18.6,0.3,12,0.3"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__card">
+                <div class="portfolio__card__title"><h3>Image Gallery</h3></div>
+                <div class="portfolio__card__image__container">
+                    <!-- <img class="portfolio__card__image" src="#" alt="#"> -->
+                </div>
+                <div class="portfolio__card__desc">
+                    <p>
+                        An image gallery utilizing the baguetteBox framework for a pleasant pop-up display and a search function.
+                    </p>
+                </div>
+                <div class="portfolio__card__links">
+                    <div class="project-arrow">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 18v-4h-7v-4h7v-4l6 6-6 6z"/></svg>
+                        </a>
+                    </div>
+                    <div class="project-github">
+                        <a href ="#">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                                <path d="M12,0.3c-6.6,0-12,5.4-12,12c0,5.3,3.4,9.8,8.2,11.4C8.8,23.8,9,23.4,9,23.1c0-0.3,0-1,0-2c-3.3,0.7-4-1.6-4-1.6
+                                    c-0.5-1.4-1.3-1.8-1.3-1.8C2.5,17,3.7,17,3.7,17c1.2,0.1,1.8,1.2,1.8,1.2c1.1,1.8,2.8,1.3,3.5,1c0.1-0.8,0.4-1.3,0.8-1.6
+                                    c-2.7-0.3-5.5-1.3-5.5-5.9c0-1.3,0.5-2.4,1.2-3.2C5.4,8.1,5,6.9,5.7,5.3c0,0,1-0.3,3.3,1.2c1-0.3,2-0.4,3-0.4c1,0,2,0.1,3,0.4
+                                    c2.3-1.6,3.3-1.2,3.3-1.2c0.6,1.7,0.2,2.9,0.1,3.2c0.8,0.8,1.2,1.9,1.2,3.2c0,4.6-2.8,5.6-5.5,5.9c0.4,0.4,0.8,1.1,0.8,2.2
+                                    c0,1.6,0,2.9,0,3.3c0,0.3,0.2,0.7,0.8,0.6c4.8-1.6,8.2-6.1,8.2-11.4C24,5.7,18.6,0.3,12,0.3"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__card">
+                <div class="portfolio__card__title"><h3>The Code Review</h3></div>
+                <div class="portfolio__card__image__container">
+                    <!-- <img class="portfolio__card__image" src="#" alt="#"> -->
+                </div>
+                <div class="portfolio__card__desc">
+                    <p>
+                        A sample form which displays a knowledge of crucial HTML skills, basic design principles and an understanding of WCAG compliance.
+                    </p>
+                </div>
+                <div class="portfolio__card__links">
+                    <div class="project-arrow">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 18v-4h-7v-4h7v-4l6 6-6 6z"/></svg>
+                        </a>
+                    </div>
+                    <div class="project-github">
+                        <a href ="#">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                                <path d="M12,0.3c-6.6,0-12,5.4-12,12c0,5.3,3.4,9.8,8.2,11.4C8.8,23.8,9,23.4,9,23.1c0-0.3,0-1,0-2c-3.3,0.7-4-1.6-4-1.6
+                                    c-0.5-1.4-1.3-1.8-1.3-1.8C2.5,17,3.7,17,3.7,17c1.2,0.1,1.8,1.2,1.8,1.2c1.1,1.8,2.8,1.3,3.5,1c0.1-0.8,0.4-1.3,0.8-1.6
+                                    c-2.7-0.3-5.5-1.3-5.5-5.9c0-1.3,0.5-2.4,1.2-3.2C5.4,8.1,5,6.9,5.7,5.3c0,0,1-0.3,3.3,1.2c1-0.3,2-0.4,3-0.4c1,0,2,0.1,3,0.4
+                                    c2.3-1.6,3.3-1.2,3.3-1.2c0.6,1.7,0.2,2.9,0.1,3.2c0.8,0.8,1.2,1.9,1.2,3.2c0,4.6-2.8,5.6-5.5,5.9c0.4,0.4,0.8,1.1,0.8,2.2
+                                    c0,1.6,0,2.9,0,3.3c0,0.3,0.2,0.7,0.8,0.6c4.8-1.6,8.2-6.1,8.2-11.4C24,5.7,18.6,0.3,12,0.3"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="portfolio__card">
-            <div class="portfolio__card__title"><h3>YourApp</h3></div>
-            <div class="portfolio__card__image__container">
-                <!-- <img class="portfolio__card__image" src="#" alt="#"> -->
-            </div>
-            <div class="portfolio__card__desc">
-                <p>
-                    This page provides a faux social media page. It displays a knowledge of JS frameworks and an ability to take a given UI/UX mock-up and turn it into a functioning webpage.
-                </p>
-            </div>
-            <div class="portfolio__card__links">
-                <div class="project-arrow">
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 18v-4h-7v-4h7v-4l6 6-6 6z"/></svg>
-                    </a>
-                </div>
-                <div class="project-github">
-                    <a href ="#">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-                            <path d="M12,0.3c-6.6,0-12,5.4-12,12c0,5.3,3.4,9.8,8.2,11.4C8.8,23.8,9,23.4,9,23.1c0-0.3,0-1,0-2c-3.3,0.7-4-1.6-4-1.6
-                                c-0.5-1.4-1.3-1.8-1.3-1.8C2.5,17,3.7,17,3.7,17c1.2,0.1,1.8,1.2,1.8,1.2c1.1,1.8,2.8,1.3,3.5,1c0.1-0.8,0.4-1.3,0.8-1.6
-                                c-2.7-0.3-5.5-1.3-5.5-5.9c0-1.3,0.5-2.4,1.2-3.2C5.4,8.1,5,6.9,5.7,5.3c0,0,1-0.3,3.3,1.2c1-0.3,2-0.4,3-0.4c1,0,2,0.1,3,0.4
-                                c2.3-1.6,3.3-1.2,3.3-1.2c0.6,1.7,0.2,2.9,0.1,3.2c0.8,0.8,1.2,1.9,1.2,3.2c0,4.6-2.8,5.6-5.5,5.9c0.4,0.4,0.8,1.1,0.8,2.2
-                                c0,1.6,0,2.9,0,3.3c0,0.3,0.2,0.7,0.8,0.6c4.8-1.6,8.2-6.1,8.2-11.4C24,5.7,18.6,0.3,12,0.3"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio__card">
-            <div class="portfolio__card__title"><h3>Wheel of Success</h3></div>
-            <div class="portfolio__card__image__container">
-                <!-- <img class="portfolio__card__image" src="#" alt="#"> -->
-            </div>
-            <div class="portfolio__card__desc">
-                <p>
-                    A phrase guessing game utilizing javascript and clean css to display interactivity in an application.
-                </p>
-            </div>
-            <div class="portfolio__card__links">
-                <div class="project-arrow">
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 18v-4h-7v-4h7v-4l6 6-6 6z"/></svg>
-                    </a>
-                </div>
-                <div class="project-github">
-                    <a href ="#">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-                            <path d="M12,0.3c-6.6,0-12,5.4-12,12c0,5.3,3.4,9.8,8.2,11.4C8.8,23.8,9,23.4,9,23.1c0-0.3,0-1,0-2c-3.3,0.7-4-1.6-4-1.6
-                                c-0.5-1.4-1.3-1.8-1.3-1.8C2.5,17,3.7,17,3.7,17c1.2,0.1,1.8,1.2,1.8,1.2c1.1,1.8,2.8,1.3,3.5,1c0.1-0.8,0.4-1.3,0.8-1.6
-                                c-2.7-0.3-5.5-1.3-5.5-5.9c0-1.3,0.5-2.4,1.2-3.2C5.4,8.1,5,6.9,5.7,5.3c0,0,1-0.3,3.3,1.2c1-0.3,2-0.4,3-0.4c1,0,2,0.1,3,0.4
-                                c2.3-1.6,3.3-1.2,3.3-1.2c0.6,1.7,0.2,2.9,0.1,3.2c0.8,0.8,1.2,1.9,1.2,3.2c0,4.6-2.8,5.6-5.5,5.9c0.4,0.4,0.8,1.1,0.8,2.2
-                                c0,1.6,0,2.9,0,3.3c0,0.3,0.2,0.7,0.8,0.6c4.8-1.6,8.2-6.1,8.2-11.4C24,5.7,18.6,0.3,12,0.3"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio__card">
-            <div class="portfolio__card__title"><h3>Image Gallery</h3></div>
-            <div class="portfolio__card__image__container">
-                <!-- <img class="portfolio__card__image" src="#" alt="#"> -->
-            </div>
-            <div class="portfolio__card__desc">
-                <p>
-                    An image gallery utilizing the baguetteBox framework for a pleasant pop-up display and a search function.
-                </p>
-            </div>
-            <div class="portfolio__card__links">
-                <div class="project-arrow">
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 18v-4h-7v-4h7v-4l6 6-6 6z"/></svg>
-                    </a>
-                </div>
-                <div class="project-github">
-                    <a href ="#">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-                            <path d="M12,0.3c-6.6,0-12,5.4-12,12c0,5.3,3.4,9.8,8.2,11.4C8.8,23.8,9,23.4,9,23.1c0-0.3,0-1,0-2c-3.3,0.7-4-1.6-4-1.6
-                                c-0.5-1.4-1.3-1.8-1.3-1.8C2.5,17,3.7,17,3.7,17c1.2,0.1,1.8,1.2,1.8,1.2c1.1,1.8,2.8,1.3,3.5,1c0.1-0.8,0.4-1.3,0.8-1.6
-                                c-2.7-0.3-5.5-1.3-5.5-5.9c0-1.3,0.5-2.4,1.2-3.2C5.4,8.1,5,6.9,5.7,5.3c0,0,1-0.3,3.3,1.2c1-0.3,2-0.4,3-0.4c1,0,2,0.1,3,0.4
-                                c2.3-1.6,3.3-1.2,3.3-1.2c0.6,1.7,0.2,2.9,0.1,3.2c0.8,0.8,1.2,1.9,1.2,3.2c0,4.6-2.8,5.6-5.5,5.9c0.4,0.4,0.8,1.1,0.8,2.2
-                                c0,1.6,0,2.9,0,3.3c0,0.3,0.2,0.7,0.8,0.6c4.8-1.6,8.2-6.1,8.2-11.4C24,5.7,18.6,0.3,12,0.3"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio__card">
-            <div class="portfolio__card__title"><h3>The Code Review</h3></div>
-            <div class="portfolio__card__image__container">
-                <!-- <img class="portfolio__card__image" src="#" alt="#"> -->
-            </div>
-            <div class="portfolio__card__desc">
-                <p>
-                    A sample form which displays a knowledge of crucial HTML skills, basic design principles and an understanding of WCAG compliance.
-                </p>
-            </div>
-            <div class="portfolio__card__links">
-                <div class="project-arrow">
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 18v-4h-7v-4h7v-4l6 6-6 6z"/></svg>
-                    </a>
-                </div>
-                <div class="project-github">
-                    <a href ="#">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-                            <path d="M12,0.3c-6.6,0-12,5.4-12,12c0,5.3,3.4,9.8,8.2,11.4C8.8,23.8,9,23.4,9,23.1c0-0.3,0-1,0-2c-3.3,0.7-4-1.6-4-1.6
-                                c-0.5-1.4-1.3-1.8-1.3-1.8C2.5,17,3.7,17,3.7,17c1.2,0.1,1.8,1.2,1.8,1.2c1.1,1.8,2.8,1.3,3.5,1c0.1-0.8,0.4-1.3,0.8-1.6
-                                c-2.7-0.3-5.5-1.3-5.5-5.9c0-1.3,0.5-2.4,1.2-3.2C5.4,8.1,5,6.9,5.7,5.3c0,0,1-0.3,3.3,1.2c1-0.3,2-0.4,3-0.4c1,0,2,0.1,3,0.4
-                                c2.3-1.6,3.3-1.2,3.3-1.2c0.6,1.7,0.2,2.9,0.1,3.2c0.8,0.8,1.2,1.9,1.2,3.2c0,4.6-2.8,5.6-5.5,5.9c0.4,0.4,0.8,1.1,0.8,2.2
-                                c0,1.6,0,2.9,0,3.3c0,0.3,0.2,0.7,0.8,0.6c4.8-1.6,8.2-6.1,8.2-11.4C24,5.7,18.6,0.3,12,0.3"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <h2 class="contact__title">Contact Me</h2>
         <div class="form__container">
             <form action="mailto:bodenstabp@gmail.com" method="POST" class="contact__form" class="form">
@@ -297,6 +303,7 @@
         <div class="footer__logo"><a href="#">paul.Bodenstab</a></div>
     </footer>
 <!-- JS Links -->
+<script> </script>
 <script src="app.js"></script>
 </body>
 </html>

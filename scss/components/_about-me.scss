@@ -25,6 +25,11 @@
 
 .social-nav a {
     fill: $primary;
+    transition: fill 0.5s;
+
+    &:hover {
+        fill: lighten($tertiary, 5%);
+    }
 }
 
 .about-me__info{

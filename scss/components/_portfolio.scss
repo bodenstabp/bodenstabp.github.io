@@ -1,4 +1,4 @@
-.portfolio {
+.portfolio__card__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,6 +8,7 @@
 .portfolio__title {
     @include title-style;
     margin-bottom: 1em;
+    text-align: center;
 }
 
 .portfolio__card {
@@ -55,9 +56,16 @@
     padding: 0.75em 0;
     justify-content: space-evenly;
     width: 275px;
+
+    
 }
 
 .portfolio svg {
     width: 60px;
     height: 60px;
+    transition: fill 0.5s;
+
+    &:hover {
+        fill: $tertiary;
+    }
 }

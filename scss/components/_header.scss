@@ -1,19 +1,109 @@
-.nav-list__fullscreen, .nav-list{
-    display: none;
-}
-
 nav {
     background: $secondary;
-    height: 10vh;
+    height: 80px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    top: -5px;
 }
 
 nav .logo {
     color: $primary;
     font-weight: 600;
     font-size: 0.8em;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
+    padding-left: 50px;
 }
 
+nav a {
+    text-decoration: none;
+}
+
+
+// Hamburger Styling
+
+.nav__toggle {
+    z-index: 11;
+    position: absolute;
+    top: 25px; right: 50px;
+    background: none;
+    padding: 1em .5em;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+
+}
+.hamburger {
+    display: block;
+    position: relative;
+
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    width: 2em;
+    height: 3px;
+    background: $light;
+    transition: transform 0.25s;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    position: absolute;
+    right: 4px;
+}
+
+.hamburger::before { bottom: 7px; }
+.hamburger::after { top: 7px; }
+
+// Hamburger Styling End
+
+
+// Hamburger Functionality
+
+.nav__open .nav .nav-list{ transform: translateX(0); }
+
+.nav__open .nav__toggle { position: fixed; }
+
+.nav__open .hamburger {
+    transform: rotate(45deg);
+    bottom: 0;
+}
+
+.nav__open .hamburger::before { transform: translateX(100vw) ; }
+
+.nav__open .hamburger::after {
+    transform: rotate(-90deg)
+               translateX(6px);
+    right: 0;
+
+}
+
+// Hamburger Functionality End
+
+
+.nav-list {
+    z-index: 10;
+    background: $secondary;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    transform: translateX(100%);
+    transition: transform 0.55s ease-in-out;
+}
+
+.nav-list a {
+    font-size: 1.4em;
+    letter-spacing: 4px;
+    color: $light;
+
+    &:hover { text-decoration: underline; }
+}
