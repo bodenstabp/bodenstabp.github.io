@@ -14,9 +14,3 @@ body{
     font-family:  $orbitron;
 }
 
-.css-transitions-only-after-page-load * {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -ms-transition: none !important;
-    -o-transition: none !important;
-  }

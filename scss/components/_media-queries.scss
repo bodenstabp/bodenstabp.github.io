@@ -139,6 +139,7 @@
 
 @media (min-width: 1024px) {
     // Header
+
     nav .logo {
         font-size: 1em;
     }
@@ -163,4 +164,85 @@
         margin-left: 1.5em;
     }
     // Header end
+
+}
+
+@media (min-width: 1200px) {
+
+    // Header
+    nav {
+        padding: 0 25px;
+        height: 100px;
+    }
+
+
+
+    
+    // Header End
+
+
+    // Hero
+    .hero {
+        margin-left: 75px;
+        height: 600px;
+    }
+
+    .hero__image {
+        width: 664px;
+        right: -190px; top: 289.5px;
+    }
+
+    .hero__title {
+        width: 800px;
+        margin-bottom: 64px;
+        font-size: 2.4em;
+        line-height: 1.6em;
+    }
+
+    .hero__subtitle {
+        width: 340px;
+        font-size: 2em;
+        line-height: 1.4em;
+    }
+
+    .hero__button {
+        margin-top: 64px;
+    }
+    // Hero End
+
+
+    // About Me
+    .about-me {
+        padding: 1.5em 75px;
+        grid-template-areas: 
+                "social-nav about-me__title"
+                "about-me__technologies about-me__info about-me__dev-tools"
+                "about-me__technologies about-me__info about-me__dev-tools";
+               
+                
+    }
+
+    
+
+    .social-nav li {
+        margin: 0 2em;
+        width:60px;
+        height: 60px;
+    }
+    // About Me End
+
+
+    // Portfolio
+    .portfolio__title {
+        margin-left: 75px;
+    }
+    // Portfolio End
+}
+
+@media (min-width: 1500px) {
+    .nav-list,
+    nav .logo {
+        font-size: 1.7em;
+        letter-spacing: 10px;
+    }
 }

@@ -51,9 +51,10 @@
     letter-spacing: 0.5px;
     padding: 0.5em;
     border: none;
-    border-radius: 3px;
+    border-radius: 8px 2px;
     outline: none;
-    color: $secondary;
+    color: $light;
+    background-color: $dark;
 }
 
 .contact__input {

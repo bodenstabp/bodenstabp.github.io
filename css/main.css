@@ -373,9 +373,10 @@ nav a {
   letter-spacing: 0.5px;
   padding: 0.5em;
   border: none;
-  border-radius: 3px;
+  border-radius: 8px 2px;
   outline: none;
-  color: #141F31;
+  color: #fff;
+  background-color: #040507;
 }
 
 .contact__input {
@@ -602,6 +603,63 @@ footer {
     margin-left: 1.5em;
   }
 }
+@media (min-width: 1200px) {
+  nav {
+    padding: 0 25px;
+    height: 100px;
+  }
+
+  .hero {
+    margin-left: 75px;
+    height: 600px;
+  }
+
+  .hero__image {
+    width: 664px;
+    right: -190px;
+    top: 289.5px;
+  }
+
+  .hero__title {
+    width: 800px;
+    margin-bottom: 64px;
+    font-size: 2.4em;
+    line-height: 1.6em;
+  }
+
+  .hero__subtitle {
+    width: 340px;
+    font-size: 2em;
+    line-height: 1.4em;
+  }
+
+  .hero__button {
+    margin-top: 64px;
+  }
+
+  .about-me {
+    padding: 1.5em 75px;
+    display: grid;
+    grid-template-areas: "social-nav about-me__title" "about-me__info about-me__dev-tools" "about-me__info about-me__technologies";
+  }
+
+  .social-nav li {
+    margin: 0 2em;
+    width: 60px;
+    height: 60px;
+  }
+
+  .portfolio__title {
+    margin-left: 75px;
+  }
+}
+@media (min-width: 1500px) {
+  .nav-list,
+nav .logo {
+    font-size: 1.7em;
+    letter-spacing: 10px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -616,13 +674,6 @@ body {
   color: #fff;
   background-color: #040507;
   font-family: "Orbitron", sans-serif;
-}
-
-.css-transitions-only-after-page-load * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
 }
 
 /*# sourceMappingURL=main.css.map */
