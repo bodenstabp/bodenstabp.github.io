@@ -286,9 +286,44 @@ nav a {
 }
 
 .portfolio__card__image__container {
-  background-color: #523351;
   width: 275px;
   height: 200px;
+}
+
+.pci__one {
+  background-image: url(../../images/api.jpg);
+}
+
+.pci__two {
+  background-image: url(../../images/webapp.jpg);
+}
+
+.pci__three {
+  background-image: url(../../images/wos.jpg);
+}
+
+.pci__four {
+  background-image: url(../../images/picture-box.JPG);
+}
+
+.pci__five {
+  background-image: url(../../images/form.jpg);
+}
+
+.pci__one,
+.pci__two,
+.pci__three,
+.pci__four,
+.pci__five {
+  background-size: cover;
+  transition: opacity 0.5s;
+}
+.pci__one:hover,
+.pci__two:hover,
+.pci__three:hover,
+.pci__four:hover,
+.pci__five:hover {
+  opacity: 0.8;
 }
 
 .portfolio__card__desc {
@@ -639,8 +674,38 @@ footer {
 
   .about-me {
     padding: 1.5em 75px;
-    display: grid;
-    grid-template-areas: "social-nav about-me__title" "about-me__info about-me__dev-tools" "about-me__info about-me__technologies";
+    grid-template-areas: "social-nav about-me__title about-me__title" "about-me__technologies about-me__info about-me__dev-tools" "about-me__technologies about-me__info about-me__dev-tools";
+  }
+
+  .about-me__technologies {
+    justify-self: start;
+  }
+
+  .about-me__info {
+    justify-self: center;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 1.5em;
+    width: 400px;
+  }
+
+  .about-me__dev-tools {
+    justify-self: end;
+  }
+
+  .about-me__technologies__title,
+.about-me__dev-tools__title {
+    letter-spacing: 6.5px;
+    font-size: 1.4em;
+  }
+
+  .about-me__technologies__list-item,
+.about-me__dev-tools__list-item {
+    width: 200px;
+    padding: 1em 0.5em;
+    font-size: 1em;
+    letter-spacing: 4px;
+    border-width: 3.5px;
   }
 
   .social-nav li {

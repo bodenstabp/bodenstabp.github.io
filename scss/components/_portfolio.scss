@@ -32,10 +32,33 @@
 
 
 .portfolio__card__image__container {
-    background-color: $tertiary;
     width: 275px;
     height: 200px;
 }
+
+.pci__one { background-image: url(../../images/api.jpg); }
+
+.pci__two { background-image: url(../../images/webapp.jpg); }
+
+.pci__three { background-image: url(../../images/wos.jpg); }
+
+.pci__four { background-image: url(../../images/picture-box.JPG); }
+
+.pci__five { background-image: url(../../images/form.jpg); }
+
+.pci__one,
+.pci__two,
+.pci__three,
+.pci__four,
+.pci__five {
+    background-size: cover;
+    transition: opacity 0.5s;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
 
 .portfolio__card__desc {
     font-family: $montserrat;
