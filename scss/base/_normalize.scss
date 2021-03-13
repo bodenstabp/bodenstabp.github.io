@@ -14,3 +14,11 @@ body{
     font-family:  $orbitron;
 }
 
+a:active, a:focus {
+    outline: 0;
+    border: none;
+  }
+
+  button:active, button:focus {
+      outline: 0;
+  }
